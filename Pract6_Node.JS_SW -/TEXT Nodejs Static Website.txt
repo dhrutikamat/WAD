@@ -1,0 +1,30 @@
+In this practical6, that is creating a static website with the help of node js. First, we have to go to a folder, make a new folder named practical 6 then click on the path, replace the path with cmd. The command prompt will automatically open. In the command prompt you will see the path of the folder :
+
+> npm init  //this will initialize the prompt for that path and create a package
+
+Then after that as the package is initialized and the package is formed we will be able to see the package.json demo on the command line itself. Then press press enter and in the next line of the command prompt write:
+
+> npm install express --save  //all the packages of express js are added.
+
+Then, as we initialized and created the package in vscode, an index.js file is automatically being created, then after installing the express packages, a package.json file is also created. Then there is a node_module folder created in vscode.
+
+Later create a folder public in the practical6 folder and in that folder add an index.html file. A normal boiler plate of html is okay. Add the heading in a <h1> tag as this is a static website, then save the file.
+Next is in index.js folder write the following code:
+
+
+> const express=require('express');  //we are importing express module in this project
+> const app=express();  //We just call express function
+
+> app.use(express.static('public'))
+
+> app.listen(4000,()=> {
+    console.log("Server is started") //here we use call back function for checking if the server is started or not
+})
+
+
+
+
+To run this index.js file in cmd type:
+>node index.js
+
+This will state the message that the. server has started then in Chrome in the. Chrome in the search bar, right, localhost:4000
