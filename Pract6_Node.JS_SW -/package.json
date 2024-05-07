@@ -1,0 +1,14 @@
+{
+  "name": "pract6_node.js_static_website",
+  "version": "1.0.0",
+  "description": "This is wad Practical 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhruti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
