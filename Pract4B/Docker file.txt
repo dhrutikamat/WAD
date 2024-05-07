@@ -1,0 +1,30 @@
+Firstly, we have to install Docker Desktop, then install nodejs According to the version of your os Then we have to create a folder. Here it is a PRACT4B. Open visual studio code. Then open this folder. Add extension Docker. 
+
+Then in PRACT4B folder from VSCODE add file dhruti.js
+
+
+
+In dhruti.js file add data as:
+console.log("Name: Dhruti Kamat");
+console.log("Class: TE");
+console.log("Subject: WAD");
+console.log("Assignment: 4B");
+
+
+
+Add another file in PRACT4B from VSCODE that is Dockerfile. In that file write :
+FROM node:alpine
+COPY . /PRACT4B
+CMD node /PRACT4B/dhruti.js
+
+
+
+Then open terminal write:
+> docker --version
+> node dhruti.js 
+> docker build -t pract4b .         // here folder name in lower case and remember the space and the dot 
+> docker images 
+
+So now let's Understand what is the Docker and what is Docker container? So Docker is an open platform which is used for developing shipping and running applications. And it provides the ability to run an application in a loosely isolated environment and that environment is nothing but the container And because of this isolation and security, we can run many containers simultaneously on a given host. So in short, if you are a developer, and if you are developing one software, and you have developed the software, and you have given it to the testing team, then if that developer found some work, then it will not send that application or software to you. It will make changes to the same image id, because we are sharing image id with that developer, and it will make some changes or remove that bugs using this image id. And after all the bugs are removed and application is ready for the testing, it will send it to the testing team, and then it will be given to the customer. So in this way, we can use this docker images for our development and as well as for shipping and running applications. 
+
+First is we have to install the Docker Desktop or Docker toolbox, depending on your system requirement, then we have to install the node js. Then next is we have to install the Docker Extension in our VSCODE, which is from Microsoft. Then we have to create one folder with lower case name and then we have to create files inside that. So 1st file will be Docker file where D is capital and no extension for that file Inside that we have written the three lines of code, then. we have created the JS file and then I have written some commands inside that or code using console dot log and then we have executed only 4 commands inside this terminal. First is the Docker version which is used to check the Docker version. Once installed it successfully it will show you the content of this file that is name, class, subject and assignment number 2. The next is we have created the images. So for that we have used Docker built and the name of the folder is dot. Then next is we have used the command docker images to see the images. So here you will see the details about the images, such as deposit rate, tag, image id, the time when it is created and the size. So, that's it!
